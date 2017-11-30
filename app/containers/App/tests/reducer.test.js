@@ -17,7 +17,7 @@ describe('appReducer', () => {
   });
 
   it('should return the initial state', () => {
-      expect(appReducer(undefined, {})).toEqual(state);
+    expect(appReducer(undefined, {})).toEqual(state);
   });
 
   it('should handle the load action correctly', () => {
