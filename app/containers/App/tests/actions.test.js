@@ -1,51 +1,47 @@
 import {
-  LOAD_REPOS,
-  LOAD_REPOS_SUCCESS,
-  LOAD_REPOS_ERROR,
+  INITIALIZE,
+  INITIALIZE_SUCCESS,
+  INITIALIZE_ERROR,
 } from '../constants';
 
 import {
-  loadRepos,
-  reposLoaded,
-  repoLoadingError,
+  load,
+  appInitialized,
+  appInitializingError,
 } from '../actions';
 
 describe('App Actions', () => {
-  describe('loadRepos', () => {
+  describe('load', () => {
     it('should return the correct type', () => {
       const expectedResult = {
-        type: LOAD_REPOS,
+        type: INITIALIZE,
       };
 
-      expect(loadRepos()).toEqual(expectedResult);
+      expect(load()).toEqual(expectedResult);
     });
   });
 
-  describe('reposLoaded', () => {
+  describe('appInitialized', () => {
     it('should return the correct type and the passed repos', () => {
-      const fixture = ['Test'];
-      const username = 'test';
       const expectedResult = {
-        type: LOAD_REPOS_SUCCESS,
-        repos: fixture,
-        username,
+        type: INITIALIZE_SUCCESS,
       };
 
-      expect(reposLoaded(fixture, username)).toEqual(expectedResult);
+      expect(appInitialized()).toEqual(expectedResult);
     });
   });
 
-  describe('repoLoadingError', () => {
+  describe('appInitializingError', () => {
     it('should return the correct type and the error', () => {
       const fixture = {
         msg: 'Something went wrong!',
       };
       const expectedResult = {
-        type: LOAD_REPOS_ERROR,
+        type: INITIALIZE_ERROR,
         error: fixture,
       };
 
-      expect(repoLoadingError(fixture)).toEqual(expectedResult);
+      expect(appInitializingError(fixture)).toEqual(expectedResult);
     });
   });
 });
