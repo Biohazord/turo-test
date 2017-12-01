@@ -6,8 +6,8 @@
 import { defineMessages } from 'react-intl';
 
 export default defineMessages({
-  header: {
-    id: 'app.containers.HomePage.header',
-    defaultMessage: 'This is HomePage container !',
+  disclaimer: {
+    id: 'app.containers.HomePage.disclaimer',
+    defaultMessage: 'Model or features not guaranteed',
   },
 });
