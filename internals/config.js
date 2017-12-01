@@ -30,6 +30,7 @@ const ReactBoilerplate = {
         'sanitize.css',
         'font-awesome',
         'bootstrap',
+        'dotenv-webpack',
       ],
 
       /**
