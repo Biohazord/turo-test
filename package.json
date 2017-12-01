@@ -175,7 +175,9 @@
       "express",
       "ip",
       "minimist",
-      "sanitize.css"
+      "sanitize.css",
+      "font-awesome",
+      "react-bootstrap"
     ],
     "include": [
       "core-js",
