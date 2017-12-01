@@ -13,7 +13,6 @@ import { Switch, Route } from 'react-router-dom';
 
 import HomePage from '../HomePage/Loadable';
 import NotFoundPage from '../NotFoundPage/Loadable';
-import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
 const AppWrapper = styled.div`
@@ -34,7 +33,6 @@ export default function App() {
       >
         <meta name="description" content="Hotwire Car Search" />
       </Helmet>
-      <Header />
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="" component={NotFoundPage} />
