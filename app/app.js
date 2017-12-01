@@ -46,6 +46,12 @@ import configureStore from './configureStore';
 // Import i18n messages
 import { translationMessages } from './i18n';
 
+// eslint-disable-next-line import/first
+import 'font-awesome/css/font-awesome.css';
+// eslint-disable-next-line import/first
+import 'bootstrap/dist/css/bootstrap.css';
+// eslint-disable-next-line import/first
+import 'react-widgets/dist/css/react-widgets.css';
 // Import CSS reset and Global Styles
 import './global-styles';
 
